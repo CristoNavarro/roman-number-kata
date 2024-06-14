@@ -4,8 +4,8 @@ export class RomanNumerals {
     let result = ""
 
     if (number >= 1000) {
-      result += "M"
-      number -= 1000
+      result += "M".repeat(Math.floor(number / 1000))
+      number -= Math.floor(number / 1000) * 1000
     }
 
     if (number >= 900) {
