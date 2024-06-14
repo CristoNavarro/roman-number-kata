@@ -109,4 +109,9 @@ describe("RomanNumerals", () => {
 
     expect(romanNumerals.fromArabic(200)).toBe("CC")
   })
+  it("with 500 returns D", () => {
+    const romanNumerals = new RomanNumerals()
+
+    expect(romanNumerals.fromArabic(500)).toBe("D")
+  })
 })
