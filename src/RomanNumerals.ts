@@ -1,13 +1,28 @@
 export class RomanNumerals {
   fromArabic(value: number): string {
-    if (value % 10 === 0) {
-      return "X".repeat(value / 10)
+    let number = value
+    let result = ""
+
+    if (number % 10 === 0) {
+      result += "X".repeat(number / 10)
+      number -= number
     }
 
-    if (value === 4) {
-      return "IV"
+    if (number === 9) {
+      result += "IX"
+      number -= 9
     }
 
-    return "I".repeat(value)
+    if (number === 4) {
+      result += "IV"
+      number -= 4
+    }
+
+    if (number < 4) {
+      result += "I".repeat(number)
+      number -= number
+    }
+
+    return result
   }
 }
