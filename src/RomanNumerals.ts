@@ -8,6 +8,11 @@ export class RomanNumerals {
       number -= 500
     }
 
+    if (number === 400) {
+      result += "CD"
+      number -= 400
+    }
+
     if (number >= 100) {
       result += "C".repeat(Math.floor(number / 100))
       number -= Math.floor(number / 100) * 100
