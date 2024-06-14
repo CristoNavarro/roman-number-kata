@@ -132,4 +132,10 @@ describe("RomanNumerals", () => {
 
     expect(romanNumerals.fromArabic(401)).toBe("CDI")
   })
+
+  it("with 1000 returns M", () => {
+    const romanNumerals = new RomanNumerals()
+
+    expect(romanNumerals.fromArabic(1000)).toBe("M")
+  })
 })
