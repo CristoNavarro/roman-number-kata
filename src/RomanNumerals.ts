@@ -8,7 +8,7 @@ export class RomanNumerals {
       number -= 1000
     }
 
-    if (number == 900) {
+    if (number >= 900) {
       result += "CM"
       number -= 900
     }
