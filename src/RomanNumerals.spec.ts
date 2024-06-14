@@ -156,4 +156,10 @@ describe("RomanNumerals", () => {
 
     expect(romanNumerals.fromArabic(901)).toBe("CMI")
   })
+
+  it("with 2000 returns MM", () => {
+    const romanNumerals = new RomanNumerals()
+
+    expect(romanNumerals.fromArabic(2000)).toBe("MM")
+  })
 })
