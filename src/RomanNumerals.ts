@@ -8,7 +8,7 @@ export class RomanNumerals {
       number -= 500
     }
 
-    if (number === 400) {
+    if (number >= 400) {
       result += "CD"
       number -= 400
     }
