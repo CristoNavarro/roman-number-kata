@@ -20,9 +20,15 @@ describe("RomanNumerals", () => {
     expect(romanNumerals.fromArabic(4)).toBe("IV")
   })
 
-  it("with 10 returns IV", () => {
+  it("with 10 returns X", () => {
     const romanNumerals = new RomanNumerals()
 
     expect(romanNumerals.fromArabic(10)).toBe("X")
+  })
+
+  it("with 20 returns X", () => {
+    const romanNumerals = new RomanNumerals()
+
+    expect(romanNumerals.fromArabic(20)).toBe("X")
   })
 })
