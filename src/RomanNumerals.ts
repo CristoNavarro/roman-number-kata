@@ -3,6 +3,11 @@ export class RomanNumerals {
     let number = value
     let result = ""
 
+    if (number === 50) {
+      result += "L"
+      number -= 50
+    }
+
     if (number >= 10) {
       result += "X".repeat(Math.floor(number / 10))
       number -= Math.floor(number / 10) * 10
