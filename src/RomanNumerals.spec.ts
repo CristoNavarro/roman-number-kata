@@ -150,4 +150,10 @@ describe("RomanNumerals", () => {
 
     expect(romanNumerals.fromArabic(900)).toBe("CM")
   })
+
+  it("with 901 returns CMI", () => {
+    const romanNumerals = new RomanNumerals()
+
+    expect(romanNumerals.fromArabic(901)).toBe("CMI")
+  })
 })
