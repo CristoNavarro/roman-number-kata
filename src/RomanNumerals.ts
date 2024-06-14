@@ -8,7 +8,7 @@ export class RomanNumerals {
       number -= 50
     }
 
-    if (number === 40) {
+    if (number >= 40) {
       result += "XL"
       number -= 40
     }
