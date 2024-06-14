@@ -8,6 +8,11 @@ export class RomanNumerals {
       number -= 50
     }
 
+    if (number === 40) {
+      result += "XL"
+      number -= 40
+    }
+
     if (number >= 10) {
       result += "X".repeat(Math.floor(number / 10))
       number -= Math.floor(number / 10) * 10
