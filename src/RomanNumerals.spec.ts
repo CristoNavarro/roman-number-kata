@@ -91,4 +91,10 @@ describe("RomanNumerals", () => {
 
     expect(romanNumerals.fromArabic(101)).toBe("CI")
   })
+
+  it("with 90 returns XC", () => {
+    const romanNumerals = new RomanNumerals()
+
+    expect(romanNumerals.fromArabic(90)).toBe("XC")
+  })
 })
