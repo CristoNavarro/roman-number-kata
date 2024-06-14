@@ -62,9 +62,15 @@ describe("RomanNumerals", () => {
     expect(romanNumerals.fromArabic(50)).toBe("L")
   })
 
-  it("with 54 returns L", () => {
+  it("with 54 returns LIV", () => {
     const romanNumerals = new RomanNumerals()
 
     expect(romanNumerals.fromArabic(54)).toBe("LIV")
+  })
+
+  it("with 40 returns XL", () => {
+    const romanNumerals = new RomanNumerals()
+
+    expect(romanNumerals.fromArabic(40)).toBe("XL")
   })
 })
