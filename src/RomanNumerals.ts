@@ -3,7 +3,7 @@ export class RomanNumerals {
     let number = value
     let result = ""
 
-    if (number === 500) {
+    if (number >= 500) {
       result += "D"
       number -= 500
     }
