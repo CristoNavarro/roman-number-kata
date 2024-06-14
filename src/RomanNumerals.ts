@@ -3,9 +3,9 @@ export class RomanNumerals {
     let number = value
     let result = ""
 
-    if (number % 10 === 0) {
-      result += "X".repeat(number / 10)
-      number -= number
+    if (number >= 10) {
+      result += "X".repeat(Math.floor(number / 10))
+      number -= Math.floor(number / 10) * 10
     }
 
     if (number === 9) {
