@@ -49,4 +49,10 @@ describe("RomanNumerals", () => {
 
     expect(romanNumerals.fromArabic(6)).toBe("VI")
   })
+
+  it("with 38 returns XXXVIII", () => {
+    const romanNumerals = new RomanNumerals()
+
+    expect(romanNumerals.fromArabic(38)).toBe("XXXVIII")
+  })
 })
